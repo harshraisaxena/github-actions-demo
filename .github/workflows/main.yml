@@ -1,0 +1,18 @@
+---
+name: my first github actions workflow
+on:
+ workflow_dispatch:
+ push:
+jobs:
+ job1:
+  runs-on: ubuntu-latest
+  steps:
+  - name: run a linux command
+    run: echo "hello everyone"
+ job2:
+  runs-on: ubuntu-latest
+  steps:
+  - name: run multiple commands
+    run: |
+     hostname -s
+     echo "bye bye"
