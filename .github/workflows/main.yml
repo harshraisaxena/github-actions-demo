@@ -4,9 +4,9 @@ on:
  workflow_dispatch:
  push:
   branches:
-  - main
-  - dev
-  - test
+   - main
+   - dev
+   - test
 jobs:
  job1:
   runs-on: ubuntu-latest
